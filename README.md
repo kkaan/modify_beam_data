@@ -1,4 +1,4 @@
-# modify_beam_data
+# pybeam
 Collection of utilities to modify beam data
 
 1. Modify PDDs with ionisation correction for FFF beams measured using ion chambers
