@@ -14,7 +14,7 @@ import numpy as np
 
 def w2cadimport(filename):
     
-    filename = 'P:/13 Equipment/Software/pybeam/10X FFF_Open_PDD_sorted.ASC'
+    # filename = 'P:/13 Equipment/Software/pybeam/10X FFF_Open_PDD_sorted.ASC'
     
     with open(filename, 'r') as myfile:
         data = myfile.read()

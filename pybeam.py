@@ -28,26 +28,28 @@ root = tk.Tk()
 root.withdraw()
 
 
-file_path = 'P:/13 Equipment/Software/pybeam/10X FFF_Open_PDD_sorted.ASC'
+
+file_path = '10X FFF_Open_PDD_sorted.ASC'
 
 dataheader, datarray = w2cadimport(file_path)
 
 m_10FFF = 0.000231318
 b_10FFF = 0.976730208
 
-iondarray = datarray
+ionpdd = datarray
+m = 0
 
-for meas in datarray:
-    pdd = meas[:,3]
-    ionpdd = pionpdd(pdd, m_10FFF, b_10FFF)
-    ionmeas = 
-    iondarray.append(ion)
+for meas in ionpdd:
 
-
-x = datarray[0][:,2]
-y = datarray[0][:,3]
-ionpdd = iondarray[]
+    ionpdd = pionpdd(meas[:,3], m_10FFF, b_10FFF)
+     
+    x = datarray[m][:,2]
+    y = datarray[m][:,3]
+    flsz = "what"
+    for item in dataheader[m].split("\n"):
+        if "FlSZ" in item:
+            flsz =  item.strip()
     
-vs.visualise(x, y, ionpdds)
-
-w2cad
+    
+    vs.visualise(x, y, ionpdd, flsz)
+    m = m+1

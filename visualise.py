@@ -8,15 +8,15 @@ Using bokeh to visualise the data
 """
 from bokeh.plotting import figure, output_file, show
 
-def visualise(x, y, ya):
+def visualise(x, y, ya, flsz):
 
     # prepare some data
     
     # output to static HTML file
-    output_file("recombination.html")
+    output_file(flsz+"_recombination.html")
     
     # create a new plot with a title and axis labels
-    p = figure(title="ion recombination corrected", x_axis_label='pdd', 
+    p = figure(title=flsz+"ion recombination corrected", x_axis_label='pdd', 
                y_axis_label='depth (mm)')
     
     # add a line renderer with legend and line thickness
