@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 15 11:37:45 2020
 
 Correct PDDS using Corns et al 2015 method. 
 
-%dd = (100 * S * Pion)/(S_dmax * Pion_dmax)
+%dd_corr = m * %dd^2 = b * %dd
 
+%dd_corr = (100 * S * Pion)/(S_dmax * Pion_dmax)
+
+Created on Mon Jun 15 11:37:45 2020
 @author: 56153805
 """
 

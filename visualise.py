@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 15 9:10:13 2020
-
 Using bokeh to visualise the data
 
+Created on Mon Jun 15 9:10:13 2020
 @author: Kaan
 """
 from bokeh.plotting import figure, output_file, show

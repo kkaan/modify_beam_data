@@ -7,7 +7,7 @@ Exports to w2cad format
 @author: kaan
 """
 
-def w2cadexport(filename, dataheader, datarray):
+def w2cadexport(filename, dataheader, ionedarray):
     
     filename = filename[0:-4]+'_ioned.ASC' # the [0:-4] strips existing ext
     
