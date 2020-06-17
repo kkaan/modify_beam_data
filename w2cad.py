@@ -71,7 +71,7 @@ def w2cadexport(filename, dataheader, datarray):
             f.write(f'$STOM')           # start of measurement delimiter
             f.write(h)
             for row in datarray[dataheader.index(h)]:                                                
-                line = f"<{row[0]:+06.01f} {row[1]:+06.01f} {row[2]:+06.01f} {row[3]:+06.01f}>\n"
+                line = f"<{row[0]:+06.01f} {row[1]:+06.01f} {row[2]:+06.01f} {row[4]:+06.01f}>\n"
                 f.write(line)
             f.write(f'$ENOM\n')         # end of measurement delimiter
  
