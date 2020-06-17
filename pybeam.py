@@ -84,7 +84,7 @@ for meas in ionedlist:
     m = m+1
 
 # Export the array to w2cad format
-w2cadexport(file_path, dataheader, ionedlist)
+#w2cadexport(file_path, dataheader, ionedlist)
 
 # Generate plots
-# vs.visualise(ionedlist, pltitle)
+vs.visualise(ionedlist, pltitle)
