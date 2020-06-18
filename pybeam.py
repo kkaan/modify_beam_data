@@ -55,13 +55,11 @@ for m in datalist:
 
 
 # Pion fit constants:
-m_10FFF = 0.000231318 # gradient of the poin slope
-b_10FFF = 0.976730208 # intercept of the pion slope
+m_10FFF = 0.000237203 # gradient of the poin slope
+b_10FFF = 1.001577591 # intercept of the pion slope
 
-m_6FFF  = 0.00012807  # gradient of the poin slope
-b_6FFF  = 0.987159689 # intercept of the pion slope
-
-
+m_6FFF  = 0.000129993 # gradient of the poin slope
+b_6FFF  = 1.001978347 # intercept of the pion slope
 
 
 pltitle = []
@@ -84,7 +82,7 @@ for meas in ionedlist:
     m = m+1
 
 # Export the array to w2cad format
-#w2cadexport(file_path, dataheader, ionedlist)
+w2cadexport(file_path, dataheader, ionedlist)
 
 # Generate plots
 vs.visualise(ionedlist, pltitle)
