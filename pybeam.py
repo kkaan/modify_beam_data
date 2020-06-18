@@ -33,7 +33,7 @@ import numpy as np
 # root.withdraw()
 # file_path = filedialog.askopenfilename()
 
-file_path = '10X FFF_Open_PDD_sorted.ASC'
+file_path = '6X FFFOpen_PDD_sorted.ASC'
 
 
 # dataheader: each item on list is the header of each measurment
@@ -69,7 +69,7 @@ pltitle = []
 m = 0
 for meas in ionedlist:
 # this loop will ionise and add ionised pdd to the fourth column.
-    meas[:,4] = pionpdd(meas[:,3], m_10FFF, b_10FFF)
+    meas[:,4] = pionpdd(meas[:,3], m_6FFF, b_6FFF)
     
     flsz = "what"
     
