@@ -13,7 +13,10 @@ Created on Mon Jun 15 11:37:45 2020
 
 def pionpdd(y, m, b):
 
-    ya = m*y**2+b*y
+    ya = m*y**2+b*y    # apply the factors
+    dmax = max(ya)
+    ya = 100*ya / dmax # normalise to dmax
+    
     return ya
 
 
