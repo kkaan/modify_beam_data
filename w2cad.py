@@ -74,4 +74,5 @@ def w2cadexport(filename, dataheader, datarray):
                 line = f"<{row[0]:+06.01f} {row[1]:+06.01f} {row[2]:+06.01f} {row[4]:+06.01f}>\n"
                 f.write(line)
             f.write(f'$ENOM\n')         # end of measurement delimiter
+        f.write(f"$ENOF")
  
