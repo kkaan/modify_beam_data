@@ -6,7 +6,7 @@ Created on Mon Jun 15 9:10:13 2020
 @author: Kaan
 """
 from bokeh.plotting import figure, output_file, show
-from bokeh.palettes import YlOrRd9, Set1_9
+from bokeh.palettes import OrRd9, Oranges9   #  BuGn9, GnBu9 for 10FFF
 
 def visualise(ioned, headers):
 
@@ -26,7 +26,7 @@ def visualise(ioned, headers):
                y_axis_label='pdd', tooltips=TOOLTIPS)
     
     # add a line renderer with legend and line thickness
-    for data, name, color1, color2 in zip(ioned, headers, YlOrRd9, Set1_9):
+    for data, name, color1, color2 in zip(ioned, headers, OrRd9, Oranges9):
         p.line(data[:,2], data[:,3], legend_label=name, color=color1, line_width=2)
         p.line(data[:,2], data[:,4], legend_label=name, color=color2, line_width=2)
     
